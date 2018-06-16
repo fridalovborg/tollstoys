@@ -1,0 +1,313 @@
+body {
+	background: $white;
+	font-family: 'Georgia';
+    font-weight: normal;
+    font-style: normal;
+    color: $gray;
+}
+p {
+	font-size: 0.9em;
+}
+h1 {
+	font-size: 2em;
+}
+h2 {
+	font-size: 1.4em;
+}
+h6 {
+	color: $dark;
+}
+a {
+	color: $gray;
+}
+ul {
+	list-style-type: none;
+	padding-left: 0;
+}
+header {
+	padding: 10px 0px;
+	font-family: 'Avenir Next Regular';
+    font-weight: normal;
+    font-style: normal;
+    position: fixed;
+    z-index: 20;
+    width: 100%;
+    background-color: $white;
+    text-align: center;
+}
+.logo img {
+	width: 200px;
+	display: inline-block;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+//mobile menu
+.menu-toggle {
+	z-index: 10;
+	display: inline-block;
+	position: fixed;
+    top: 25px;
+    right: 20px;
+}
+body.woocommerce .header, body.woocoommerce .cat-menu {
+	display: block;
+}
+body.menu-active header {
+	background: transparent;
+}
+body.menu-active .menu-icon { 
+	display: none;
+}
+body.menu-active .menu-icon-exit { 
+	display: block;
+	margin: 0 auto; 
+}
+body .menu-icon-exit {
+	display: none;
+}
+body.arkiv .menu-item-22 a, body.kategorier .menu-item-22 a, body.archive .menu-item-22 a, body.category .menu-item-22 a {
+	font-family: 'Avenir Next Demi';
+	color: $black;
+}
+body.kontakt h2 {
+	font-family: 'Avenir Next Regular';
+    font-weight: normal;
+    font-style: normal;	
+}
+.menu-m {
+	display: none;
+	background: $green;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 9;
+	overflow: scroll;
+	-webkit-owerflow-scrolling: touch;
+}
+.nav-primary {
+	display: none;
+	text-align: center;
+	width: 100%;
+
+	nav {
+		display: inline-block;
+	}
+	nav ul li {
+		padding: 20px 20px 0 20px;
+	}
+	nav ul li a {
+		text-transform: uppercase;
+		color: $gray;
+	}
+	.current-menu-item a, .current_page_parent a {
+		font-family: 'Avenir Next Demi';
+		color: $black;
+	}
+	a:hover {
+		text-decoration: none;
+		font-weight: bold;
+		color: $black;
+	}
+}
+//mobile menu 
+.nav-mobile {
+	font-family: 'Avenir Next Regular';
+    font-weight: normal;
+    font-style: normal;
+	text-align: center;
+	width: 100%;
+	
+	nav ul {
+		margin-top: 120px;
+	}
+	nav ul li {
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+	nav ul li a {
+		text-transform: uppercase;
+		color: $gray;
+		font-size: 1.6em;
+	}
+	.current-menu-item a {
+		font-family: 'Avenir Next Demi';
+		color: $black;
+	}
+	a:hover {
+		text-decoration: none;
+		font-weight: bold;
+		color: $black;
+	}
+}
+//category toggle 
+.mobile-cat-menu {
+	font-size: 1em;
+	border: 1px solid $gray;
+	padding: 5px;
+}
+//category meny
+.cat-menu {
+	display: none;
+	font-family: 'Avenir Next Regular';
+    font-weight: normal;
+    font-style: normal;
+	width: 100%;
+
+	ul {
+		padding-left: 10px;
+	}
+	a {
+		color: $gray;
+	}
+	a:hover {
+		text-decoration: none;
+		font-weight: bold;
+		color: $black;
+	}
+	.cat-item {
+		display: block;
+	}
+	.cat-item:hover .children {
+		display: table-caption;
+	}
+	.children {
+		font-size: .8em;
+	}
+	.children li {
+		margin: 4px 6px;
+	}
+	.current-cat a {
+		font-family: 'Avenir Next Demi';
+		color: $black;
+	}
+}
+//blog menu 
+.menu-blogg-container {
+	font-family: 'Avenir Next Regular';
+    font-weight: normal;
+    font-style: normal;
+	width: 100%;
+	text-align: center;
+
+	ul {
+		padding-left: 0;
+	}
+	li {
+		display: inline-block;
+		margin-left: 15px;
+		margin-right: 15px;
+	}
+	a {
+		color: $gray;
+	}
+	a:hover {
+		text-decoration: none;
+		font-weight: bold;
+		color: $black;
+	}
+	.current-menu-item a {
+		font-family: 'Avenir Next Demi';
+		color: $black;
+	}
+}
+//main
+main {
+	padding-top: 80px;
+}
+//blog
+.img {
+	width: 100%;
+	padding-top: 56.25%; // 16:9
+	background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.blog-link h1 {
+	width: 100%;
+	margin-top: 30px;
+}
+.blog-link:hover {
+	text-decoration: none;
+	color: $gray;
+}
+.blog-link:hover .underline {
+	text-decoration: underline;
+}
+.archive-content {
+	text-align: center;
+}
+//kontakt 
+.wpcf7 {
+	font-family: 'Avenir Next Regular';
+    font-weight: normal;
+    font-style: normal;
+}
+.wpcf7 label {
+	width: 100%;
+
+	span input, textarea {
+		width: 100%;
+		background: transparent;
+		border: none;
+		outline: none;
+		border-bottom: 2px solid $gray;
+	}
+	textarea {
+		height: 100px;
+		width: 100%;
+	}
+}
+input[type="submit"] {
+	width: 100%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+	background-color: $gray;
+	border: none;
+	padding: 10px;
+	color: $white;
+	outline: none;
+}
+input[type="submit"]:hover {
+	background-color: $black;
+}
+//override autofill color
+input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px $green inset !important;
+    -webkit-text-fill-color: $gray !important;
+}
+//error
+div.wpcf7-mail-sent-ok, div.wpcf7-validation-errors {
+	border: 2px solid transparent;
+	background-color: $green;
+	color: $gray;
+	padding: 20px;
+}
+//sidfot
+footer {
+	background-color: $green;
+	padding-top: 110px;
+	padding-bottom: 100px;
+	text-align: center;
+}
+footer a, footer p {
+	color: $gray;
+	line-height: 40px;
+}
+//social media icons
+.widget_socials_ignited {
+	display: block;
+	text-align: center;
+}
+.widget_socials_ignited .ci-socials-ignited-fa i {
+	font-size: 1.8em;
+	color: $gray;
+	padding: 5px;
+}
+.widget_socials_ignited .ci-socials-ignited-fa i:hover {
+	opacity: .6;
+}

@@ -1,0 +1,36 @@
+//grid settings
+$main-sm-columns:       12;
+$sidebar-sm-columns:    4;
+$grid-gutter-width:     40px;
+
+$black:         	  	#000;
+$gray: 					#707070;
+$white:					#FFF;
+$green:                 #E9F4ED;
+$dark:                  #4c4c4c;
+
+$theme-colors: (
+    primary: $black,
+    secondary: $black,
+    success: $black,
+    info: $black,
+    warning: $black,
+    danger: $black,
+    light: $black,
+    dark: $black
+);
+
+$container-max-widths: (
+    sm: 540px,
+    md: 720px,
+    lg: 960px,
+    xl: 1100px
+);
+
+// bower:scss
+@import "../../bower_components/bootstrap/scss/bootstrap.scss";
+
+@import 'base';         //mobile
+@import 'tablet';       //tablet
+@import 'fonts';        //fonts
+@import 'woocommerce';  //woocommerce

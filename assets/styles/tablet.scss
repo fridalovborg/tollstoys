@@ -1,0 +1,53 @@
+/* ------------------------------------------------------------------
+		TABLET
+------------------------------------------------------------------ */
+@include media-breakpoint-up(md) {
+	header {
+		padding: 50px 50px;
+		position: static;
+	}
+	.logo img {
+		position: static;
+	}
+	.menu-toggle {
+		display: none;
+	}
+	.nav-primary {
+		display: block;
+	}
+	//category toggle 
+	.mobile-cat-menu {
+		display: none;
+	}
+	//category meny
+	.cat-menu {
+		display: block;
+		text-align: center;
+	}
+	.cat-menu .cat-item {
+		display: inline-block;
+		position: relative;
+		margin-right: 30px;
+	}
+	.cat-menu .children {
+		display: none;
+		text-align: left;
+		position: absolute;
+    	top: 25px;
+		left: 0;
+		padding-left: 0;
+		font-size: .8em;
+		padding-top: 4px;
+		padding-bottom: 4px;
+		background-color: $white;
+		z-index: 10;
+	}
+	//main 
+	main {
+		padding-top: 0;
+	}
+	//woocommerce
+	.woocommerce .woocommerce-ordering {
+		width: 220px !important;
+	}
+}
