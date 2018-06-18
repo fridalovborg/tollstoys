@@ -49,6 +49,17 @@ header {
     top: 25px;
     right: 20px;
 }
+.icon-cart {
+	display: none;
+}
+.icon-cart-mobile {
+	display: block;
+	position: fixed;
+	bottom: 60px;
+	left: 0;
+	right: 0;
+	z-index: 10;
+}
 body.woocommerce .header, body.woocoommerce .cat-menu {
 	display: block;
 }
@@ -303,11 +314,14 @@ footer a, footer p {
 	display: block;
 	text-align: center;
 }
-.widget_socials_ignited .ci-socials-ignited-fa i {
-	font-size: 1.8em;
-	color: $gray;
+footer .widget_socials_ignited .ci-socials-ignited-fa i {
+	font-size: 1.6em;
 	padding: 5px;
 }
 .widget_socials_ignited .ci-socials-ignited-fa i:hover {
 	opacity: .6;
+}
+.widget_socials_ignited .ci-socials-ignited-fa i {
+	font-size: 1.6em;
+	color: $gray;
 }

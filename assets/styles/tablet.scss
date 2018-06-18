@@ -9,6 +9,16 @@
 	.logo img {
 		position: static;
 	}
+	//kundvagn ikon
+	.icon-cart-mobile {
+		display: none;
+	}
+	.icon-cart {
+		display: block;
+		position: absolute;
+		top: 85px;
+		right: 160px;
+	}
 	.menu-toggle {
 		display: none;
 	}
@@ -49,5 +59,11 @@
 	//woocommerce
 	.woocommerce .woocommerce-ordering {
 		width: 220px !important;
+	}
+	.woocommerce #content div.product .woocommerce-tabs, .woocommerce div.product .woocommerce-tabs, .woocommerce-page #content div.product .woocommerce-tabs, .woocommerce-page div.product .woocommerce-tabs {
+	    width: 60%;
+	}
+	.widget_socials_ignited .ci-socials-ignited-fa i {
+		font-size: 1.3em;
 	}
 }

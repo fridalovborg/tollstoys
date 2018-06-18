@@ -18,7 +18,7 @@ $args = array(
 global $post;
 $name = $post->post_name;
 ?>
-<?php if($name === 'kontakt' || $name === 'galleri' || $name === 'arkiv' || $name === 'kategorier' || $name === 'cart' || $name === 'checkout'): ?>
+<?php if($name === 'kontakt' || $name === 'galleri' || $name === 'arkiv' || $name === 'kategorier' || $name === 'cart' || $name === 'checkout' || $name === 'integritetspolicy' || $name === 'kundvagn' || $name === 'kassa' || $name === 'cookie-policy'): ?>
 	<!-- Do nothing -->
 <?php else: ?>
 	<div class="header">
@@ -29,6 +29,8 @@ $name = $post->post_name;
 	<div class="cat-menu">
 		<nav>
 			<ul>
+				<?php $events_page = get_post(25); ?>
+				<li class="cat-item"><a href="<?php echo get_permalink($events_page->ID); ?>">Alla produkter</a></li>
 			    <?php wp_list_categories( $args ); ?>
 			</ul>
 		</nav>

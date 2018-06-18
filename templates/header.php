@@ -27,11 +27,13 @@
     </div><!-- .container -->
 </header>
 <div class="menu-m">
-<div class="nav-mobile">
-    <nav>
-        <?php if (has_nav_menu('primary_navigation')) : ?>
-        <?php wp_nav_menu(['theme_location' => 'primary_navigation']); ?>
-        <?php endif; ?>
-    </nav>
+    <div class="nav-mobile">
+        <nav>
+            <?php if (has_nav_menu('primary_navigation')) : ?>
+            <?php wp_nav_menu(['theme_location' => 'primary_navigation']); ?>
+            <?php endif; ?>
+        </nav>
+    </div>
+    <div class="icon-cart-mobile"><?php dynamic_sidebar('sidebar-primary'); ?></div>
 </div>
-</div>
+<div class="icon-cart"><?php dynamic_sidebar('sidebar-primary'); ?></div>

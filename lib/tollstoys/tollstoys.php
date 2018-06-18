@@ -6,7 +6,4 @@
 */
 namespace Tollstoy;
 
-// include_once 'projekt.php';
-// include_once 'instagram.php';
-
-add_theme_support( 'custom-logo' );
+include_once 't-extra.php';

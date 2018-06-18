@@ -1,7 +1,7 @@
 <?php wp_nav_menu( array( 'menu' => 'Blogg') ); ?>
 
 <div class="row justify-content-center">
-	<div class="col-12 col-md-8">
+	<div class="col-12 col-md-10">
 		<?php while (have_posts()) : the_post(); ?>
 			<a href="<?php echo the_permalink(); ?>" class="blog-link">
 				<h1><?php the_title(); ?></h1>

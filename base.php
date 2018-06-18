@@ -20,8 +20,8 @@ use Roots\Sage\Wrapper;
     ?>
     <main>
         <div class="container">
-            <div class="row pt-4 pb-5">
-                <div class="col-12">
+            <div class="row pt-4 pb-5 justify-content-center">
+                <div class="col-10 p-0">
                     <?php include Wrapper\template_path(); ?>
                 </div>
             </div>

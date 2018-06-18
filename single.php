@@ -1,7 +1,7 @@
 <?php while (have_posts()) : the_post(); ?>
 	<?php wp_nav_menu( array( 'menu' => 'Blogg') ); ?>
 	<div class="row justify-content-center">
-		<div class="col-12 col-md-8">
+		<div class="col-12 col-md-10">
 			<h1><?php the_title(); ?></h1>
 			<h6><?php the_date(); ?></h6>
 
